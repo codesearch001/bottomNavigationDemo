@@ -35,20 +35,17 @@ class _FabTabState extends State<FabTab> {
       body: page[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex:currentIndex ,
+        currentIndex: currentIndex,
         onTap: selectPage,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey.withOpacity(0.5),
         showUnselectedLabels: false,
         showSelectedLabels: false,
         elevation: 0,
-        items: [
-
+        items: const [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: "More", icon: Icon(Icons.more)),
-          BottomNavigationBarItem(
-              label: "Product",
-              icon: Icon(Icons.production_quantity_limits_sharp)),
+          BottomNavigationBarItem(label: "Product", icon: Icon(Icons.production_quantity_limits_sharp)),
           BottomNavigationBarItem(label: "Search", icon: Icon(Icons.search)),
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.person)),
         ],
